@@ -1,0 +1,122 @@
+body{
+	background-color: #006c91;
+}
+
+#im{
+	width:400px;
+	height:300px;
+	margin-top: -150px;
+	margin-left: -200px;
+	left: 50%;
+	top: 50%;	
+	position:absolute;
+}
+
+#box{
+	background-color:#004c91;
+	text-align: center;
+    border-radius: 5px;
+	border-style: groove solid;
+	margin-top: -160px;
+	margin-left: -200px;
+	width: 400px;
+	height: 320px;
+	left: 50%;
+	top: 50%;	
+	position:absolute;
+
+}
+
+#container{
+	text-align: left;
+	margin-top:90px;
+	margin-left:45px;	
+	width: 300px;
+	height: 100px;
+}
+
+#botaoEntrar{
+	text-align:center;
+	margin-top:10px;	
+}
+
+#divError{
+	margin-top:130px;
+}
+
+.labelcustom{
+	color: #000;
+}
+
+.navbar-default {
+    background-color: #FFF;
+    border-color: #000;
+}
+/* title */
+.navbar-default .navbar-brand {
+    color: #777;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #000;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #777;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #000;
+	background-color: silver;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #E7E7E7;
+}
+
+#respostaLogin{
+	margin-top:120px;
+}
+
+#resposta{
+	/*margin-left:50%;*/
+}
+
+.nav-text{
+	color:#fff;
+}
+
+.texto-menu{
+	font-size:16px;
+}
+
+#form-cadastro{
+	margin-top: 50px;
+	margin-left:-50px;
+}
+
+#container-cadastro{
+	text-align: left;
+	margin-top:20px;
+	margin-left:20px;	
+	height: 100px;
+}
+
+.textoTD{
+	margin-top:30px;
+}
+
+.linkBranco{
+	color: #FFF;
+}
+
+#devBy{
+	position: absolute;
+	text-align:center;
+	width: 100%;
+	font-size:10px;
+	color: #fff;
+	bottom: 0;
+}

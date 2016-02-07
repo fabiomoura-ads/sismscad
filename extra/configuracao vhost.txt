@@ -1,0 +1,16 @@
+CONFIGURACAO VHOST
+
+xampp->apache->conf->extra->httpd-vhosts.conf
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@mscad.com
+    DocumentRoot "C:/xampp/htdocs/projeto"
+    ServerName mscad.com
+    ErrorLog "logs/mscad.com"
+    CustomLog "logs/mscad.com" common
+</VirtualHost>
+
+
+windows->system32->drive->etc->hosts
+
+127.0.0.1       mscad.com
