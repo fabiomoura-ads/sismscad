@@ -4,7 +4,7 @@
 
 		private $dataBase 	= "mysql";
 		private $hostName	= "localhost";
-		private $dbName 	= "teste";
+		private $dbName 	= "sismscaddb";
 		private $userName 	= "root";
 		private $password 	= "";
 		private $dao 		= null;		
