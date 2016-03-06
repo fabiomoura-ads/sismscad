@@ -2,7 +2,6 @@
 <div class="row" id="titleForm">
 	<div class="col-md-12" >
 	</div>
-	
 	<div style="font-size: 20px;" class="col-md-8 fontTitleForm" >
 		:: Cargos Cadastrados no Sistema
 	</div>	

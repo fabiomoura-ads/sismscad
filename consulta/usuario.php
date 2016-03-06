@@ -1,5 +1,4 @@
 <?php include("action/listar_usuarios.php"); ?>	
-
 <div class="row" id="titleForm">
 	<div class="col-md-12" >
 	</div>
