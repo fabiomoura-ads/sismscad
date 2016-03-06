@@ -138,22 +138,32 @@ class Cartao{
 	}		
 
 	public function setDivLogoVerso(){
-		$div = "<div id='divLogoVerso'>
+		$styleMargin = "";
+		
+		if ( $this->pessoa->getCargo()->getConstitucional() == "F" ) {
+			$styleMargin = "style='margin-left:150px'";
+		}
+		$div = "<div id='divLogoVerso' " .$styleMargin." >
 					<img src='../img_proj/brasao.png' />
 				</div>";
 		$this->verso .= $div;
 	}
 	
 	public function setDivTextoConstitucional(){
-		$div = "<div id='divTextoConstitucional'>
-					<p class='labelTextoConstitucional'>
-									Constituição Federaç Art. 5º<br/>
-									VI: Liberdade de Culto<br/>
-									VII: Entrada em hospitais e presídios<br/>
-									O Portador pode também exercer CAPELANIAS<br/>
-									Lei Federal nº 8.212 de 24-07/1998<br/>
-									Conferencista.</p>
-				</div>	";
+		$div = "";
+		$texto = "";
+					
+		if ( $this->pessoa->getCargo()->getConstitucional() == "T" ) {
+			$texto = "<p class='labelTextoConstitucional'>
+						Constituição Federaç Art. 5º<br/>
+						VI: Liberdade de Culto<br/>
+						VII: Entrada em hospitais e presídios<br/>
+						O Portador pode também exercer CAPELANIAS<br/>
+						Lei Federal nº 8.212 de 24-07/1998<br/>
+						Conferencista.</p>";
+		} 
+		
+		$div = "<div id='divTextoConstitucional'> " . $texto . " </div>	";		
 		$this->verso .= $div;				
 	}	
 	

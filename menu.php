@@ -1,5 +1,5 @@
 <header class="row">
-	<nav class="navbar navbar-default fixed">
+	<nav class="navbar navbar-default navbar-fixed-top">
 	  <div class="container-fluid">
 		<div class="navbar-header">
 		  <a class="navbar-brand" href="home.php">In&iacute;cio</a>

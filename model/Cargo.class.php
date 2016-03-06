@@ -3,6 +3,7 @@
 class Cargo{
 	private $id;
 	private $nome;
+	private $constitucional;
 	private $data_criacao;
 	private $dao = "CargoDAO";
 	
@@ -25,6 +26,14 @@ class Cargo{
 	public function setNome($nome){
 		$this->nome = $nome;
 	}
+	
+	public function getConstitucional(){
+		return $this->constitucional;
+	}
+	
+	public function setConstitucional($constitucional){
+		$this->constitucional = $constitucional;
+	}	
 	
 	public function getData_criacao(){
 		return $this->data_criacao;

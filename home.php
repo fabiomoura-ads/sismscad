@@ -19,10 +19,12 @@
 	
 </head>
 <body id='home'>
+
 <?php
 	include("developedBy.php");
 ?>
-<div class="container-fluid">
+
+<div class="container-fluid" style="margin-top:50px;" >
 	<?php	
 		include_once("menu.php");
 	?>

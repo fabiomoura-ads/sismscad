@@ -4,32 +4,37 @@
 	$cargo = $dao->getPorId($id);
 ?>
 
-<div class="row">
-	<div class="col-md-1" >
-	</div>
-	<div style="font-size: 25px;"class="col-md-11 labelcustom" >
-		Edi&ccedil;&atilde;o de Cargo
+<div class="row" id="titleForm">
+	<div style="font-size: 20px;" class="col-md-12 fontTitleForm" >
+		:: Edição de Cargo
 	</div>		
 </div>
 
-<div class="row" >
-	<div id="form-cadastro"class="col-md-12 form-cadastro">
-		<form class="form-horizontal" id="formEditarCargo" method="post" method="post" enctype="multipart/form-data" role="form">
-			<div class="row">							
-				<div class="form-group col-md-12" >
-					<!-- CARGO -->
-					<label class="control-label col-md-2 labelcustom">Cargo</label>
-					<div class="col-md-6">
-						<input class="form-control" type="text" name="nome" id="nome" value="<?php echo $cargo->getNome(); ?>" />
-						<input class="form-control" type="hidden" name="id" id="id" value="<?php echo $cargo->getId(); ?>" />
-					</div>	
-					
-					<!-- SALVAR -->					
-					<div class="col-md-2">
-						<input type="submit" class="btn btn-success" value="Salvar"/>
-					</div>	
-				</div>
-			</div>		
-		</form>			
-	</div>
-</div>
+<form class="form-horizontal" id="formEditarCargo" method="post" method="post" enctype="multipart/form-data" role="form">
+	<div class="row" id="formCadastro">
+		<div class="col-md-9" >
+			<!-- CARGO -->		
+			<div class="col-md-5">
+				<label class="control-label fontLabelForm">Cargo </label>
+				<input class="form-control" type="text" name="nome" id="nome" required value="<?php echo $cargo->getNome(); ?>" />
+				<input class="form-control" type="hidden" name="id" id="id" value="<?php echo $cargo->getId(); ?>" />
+			</div>	
+			
+			<!-- DOADOR DE ORGÃO -->
+			<div class="col-md-2">
+				<label class="control-label fontLabelForm">Constitucional</label>				
+				<input type="checkbox" <?php if($cargo->getConstitucional() == "T" ){ echo("checked"); }?> name="constitucional" id="constitucional" class="form-control" />					
+			</div>
+			
+			<div class="col-md-4">
+				<label class="control-label fontLabelForm">&nbsp; </label>		
+			</div>				
+			<!-- SALVAR -->					
+			<div class="col-md-2">
+				<input type="submit" class="btn btn-success btnCustom" value="Salvar"/>
+			</div>	
+		</div>	
+
+	</div>		
+</form>			
+

@@ -9,6 +9,11 @@ $dao = new CargoDAO();
 
 $cargo->setId($_POST['id']);
 $cargo->setNome($_POST['nome']);
+if (isset($_POST['constitucional'])) {
+	$cargo->setConstitucional("T");
+} else {
+	$cargo->setConstitucional("F");
+}
 
 $gravou = $dao->alterar($cargo);
 

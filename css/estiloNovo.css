@@ -261,12 +261,12 @@ body{
 }
 
 #devBy{
-	position: absolute;
+	position: fixed;
 	text-align:center;
 	width: 100%;
+	bottom: 0px;
 	font-size:10px;
 	color: #5CA47A;
-	bottom: 0;
 }
 
 #logoIndex{

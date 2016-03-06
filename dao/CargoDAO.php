@@ -11,12 +11,13 @@ class CargoDAO{
 			
 	public function cadastrar( $cargo ){
 
-		$sql = "insert into cargo( nome, data_criacao) values ( :nome, :data_criacao ) ";					
+		$sql = "insert into cargo( nome, constitucional, data_criacao) values ( :nome, :constitucional, :data_criacao ) ";					
 
 		$this->dao->beginTransaction();				
 
 		$stmt = $this->dao->prepare( $sql );	
 		$stmt->bindParam( ":nome", $cargo->getNome() );	
+		$stmt->bindParam( ":constitucional", $cargo->getConstitucional() );
 		$stmt->bindParam( ":data_criacao", date("Y-m-d"));	
 			
 		$result = $stmt->execute();
@@ -32,7 +33,14 @@ class CargoDAO{
 
 	public function listar() {
 		
-		$sql = "select * from cargo order by nome ";		
+		$sql = "select *,  
+					case
+						when (constitucional = 'T') then 'Sim'
+					else	
+						'Não'
+					end eh_constitucional
+					from cargo
+					order by nome ";		
 		
 		$stmt = $this->dao->prepare($sql);
 		$stmt->execute();
@@ -65,11 +73,12 @@ class CargoDAO{
 			$this->dao->beginTransaction();		
 		};
 				
-		$sql = "update cargo set nome = :nome where id = :id ";	
+		$sql = "update cargo set nome = :nome, constitucional = :constitucional where id = :id ";	
 		
 		$stmt = $this->dao->prepare($sql);
 		$stmt->bindParam(":id", $cargo->getId() );		
 		$stmt->bindParam(":nome", $cargo->getNome());		
+		$stmt->bindParam(":constitucional", $cargo->getConstitucional() );
 		
 		$stmt->execute();	
 		$this->dao->commit();

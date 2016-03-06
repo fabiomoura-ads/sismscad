@@ -4,7 +4,7 @@
 include("action/listar_membros.php");	
 ?>	
 
-<div class="row">
+<div class="row" style="margin-top:50px;">
 	<div class="col-md-12" >
 	</div>
 	<div style="font-size: 20px;" class="col-md-10 fontTitleForm" >
