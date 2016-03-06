@@ -20,13 +20,13 @@ include("action/cadastrar_membro.php");
 			<!-- NOME -->				
 			<div class="col-md-6">
 				<label class="control-label fontLabelForm">Nome </label>				
-				<input class="form-control" type="text" name="nome" id="nome" />
+				<input required class="form-control" type="text" name="nome" id="nome" />
 			</div>	
 							
 			<!-- CARGO -->
 			<div class="col-md-5">
 			<label class="control-label fontLabelForm">Cargo </label>				
-				<select class="form-control" name="cargo" id="cargo">
+				<select required class="form-control" name="cargo" id="cargo">
 					<?php for ( $i = 0; $i < count($listaCargos); $i++ ) { ?>
 						<option value="<?php echo $listaCargos[$i]["id"]; ?>"><?php echo $listaCargos[$i]["nome"]; ?></option>
 					<?php } ?>	
@@ -41,7 +41,7 @@ include("action/cadastrar_membro.php");
 						
 			<!-- MAE -->
 			<div class="col-md-6">
-				<label class="control-label fontLabelForm">M&atilde;e </label>					
+				<label class="control-label fontLabelForm">Mãe </label>					
 				<input class="form-control" type="text" name="mae" id="mae" />
 			</div>						
 
@@ -71,7 +71,7 @@ include("action/cadastrar_membro.php");
 			<!-- DATA DE NASCIMENTO -->
 			<div class="col-md-3">
 				<label class="control-label fontLabelForm">Nascimento </label>		
-				<input class="form-control" type="date" name="data_nascimento" id="data_nascimento" />
+				<input required class="form-control" type="date" name="data_nascimento" id="data_nascimento" />
 			</div>			
 									
 			<!-- GRUPO SANGUINEO -->				
@@ -92,14 +92,14 @@ include("action/cadastrar_membro.php");
 
 			<!-- DATA ADMISSAO -->		
 			<div class="col-md-3">
-				<label class="control-label fontLabelForm">Admiss&atilde;o </label>
-				<input class="form-control" type="date" name="data_admissao" id="data_admissao" />
+				<label class="control-label fontLabelForm">Admissão </label>
+				<input required class="form-control" type="date" name="data_admissao" id="data_admissao" />
 			</div>						
 			
 			<!-- DATA BATISMO -->
 			<div class="col-md-3">
 				<label class="control-label fontLabelForm">Batismo </label>
-				<input class="form-control" type="date" name="data_batismo" id="data_batismo" />
+				<input required class="form-control" type="date" name="data_batismo" id="data_batismo" />
 			</div>								
 				
 			<!-- DOADOR DE ORGÃO -->
@@ -112,7 +112,7 @@ include("action/cadastrar_membro.php");
 			<!-- FOTO -->
 			<div class="col-md-6">
 				<label class="control-label fontLabelForm">Foto </label>		
-				<input class="form-control" type="file" name="foto" id="foto" />
+				<input required class="form-control" type="file" name="foto" id="foto" />
 			</div>												
 			
 			<div class="col-md-6">

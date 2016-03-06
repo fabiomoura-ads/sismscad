@@ -1,17 +1,20 @@
 <?php include("developedBy.php"); ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml">
-<head><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1;">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
     <link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="bootstrap-3.3.6-dist/css/signin.css" rel="stylesheet">
     <script src="bootstrap-3.3.6-dist/js/bootstrap.js"></script>	
 	<link href="css/estiloNovo.css" rel="stylesheet"> 		
 </head>
+
 <body id="index">
 
 <div id="box">
 	<div id="container">
 		<form class="form-vertical" id="formLogin" method="post" action="">			
-			<label id="label-login" class="control-label fontSecondary">Nome de usu&aacute;rio</label>
+			<label id="label-login" class="control-label fontSecondary">Nome de usuário</label>
 			<div class="input-group">
 				<div class="input-group-addon boxIcon">
 					<span class="glyphicon glyphicon-user iconColor"></span>
@@ -36,7 +39,7 @@
 	</div>
 	
 	<div id="respostaLogin">
-		<div class="alert alert-danger" role="alert">Usu&aacute;rio ou senha inv&aacute;lido
+		<div class="alert alert-danger" role="alert">Usuário ou senha inválido
 			<button type="button" class="close" data-dismiss="modal"><span id="fechar" name="fechar" aria-hidden="true">&times;</span></button>
 		</div>	
 	</div>
