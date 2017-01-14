@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 14-Fev-2016 às 04:08
--- Versão do servidor: 10.1.9-MariaDB
--- PHP Version: 5.5.30
+-- Generation Time: 14-Jan-2017 às 23:38
+-- Versão do servidor: 10.1.16-MariaDB
+-- PHP Version: 5.6.24
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `sismscaddb`
+-- Database: `sismscaddb1`
 --
 
 -- --------------------------------------------------------
@@ -29,15 +29,16 @@ SET time_zone = "+00:00";
 CREATE TABLE `cargo` (
   `id` int(11) NOT NULL,
   `nome` varchar(150) NOT NULL,
-  `data_criacao` date NOT NULL
+  `data_criacao` date NOT NULL,
+  `constitucional` char(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Extraindo dados da tabela `cargo`
 --
 
-INSERT INTO `cargo` (`id`, `nome`, `data_criacao`) VALUES
-(1, 'Auxiliar', '2016-02-14');
+INSERT INTO `cargo` (`id`, `nome`, `data_criacao`, `constitucional`) VALUES
+(1, 'Cargo Teste', '2016-02-14', '');
 
 -- --------------------------------------------------------
 
@@ -67,7 +68,7 @@ CREATE TABLE `pessoa` (
 --
 
 INSERT INTO `pessoa` (`id`, `nome`, `cargo`, `data_batismo`, `data_admissao`, `doador_orgao`, `grupo_sanguineo`, `pai`, `mae`, `foto`, `estado_civil`, `rg`, `cpf`, `data_nascimento`) VALUES
-(1, 'Antonio Carlos Silva', 1, '2016-01-14', '2016-02-14', '1', 'A', 'Rosildo Lima Silva', 'Maria da Silva', '', 'Casado', '2010201020102010', '123.456.789.11', '1980-10-11');
+(1, 'Membro Teste', 1, '2016-01-14', '2016-02-14', '1', 'A', 'Pai Teste', 'Mae Teste', '', 'Casado', '2010201020102010', '123.456.789.11', '1980-10-11');
 
 -- --------------------------------------------------------
 
@@ -119,7 +120,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT for table `cargo`
 --
 ALTER TABLE `cargo`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `pessoa`
 --
