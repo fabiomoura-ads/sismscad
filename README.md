@@ -2,7 +2,7 @@
 
 Projeto: Sistema de Cadastro e geração de Carteira de membro - ( projeto da Igreja )
 
-Tecnologias Utilizadas: PHP, Bootstrap-3.3.6-dist, jquery-2.1.4.min.js, Banco de Dados Mysql
+Tecnologias Utilizadas: PHP, Bootstrap-3.3.6-dist, jquery-2.1.4.min.js, Banco de Dados MySql
 
 Objetivo do projeto: Cadastro e geração das carteiras de membros, para posterior confecção.
 
