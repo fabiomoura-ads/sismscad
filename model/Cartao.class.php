@@ -7,7 +7,7 @@ class Cartao{
 	private $frente;
 	private $verso;
 	
-	private $igreja = "IGREJA EVANGÉLICA ASSEMBLÉIA DE DEUS<br/>MINISTÉRIO PENTECOSTAL MONTE SIÃO";
+	private $igreja = "IGREJA EVANGÉLICA ASSEMBLÉIA DE DEUS<br/>NOME DO MINISTÉRIO";
 	
 	public function Cartao($id, $pessoa){
 		$this->id = $id;
