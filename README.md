@@ -13,5 +13,6 @@ Para Utilização:
 -Criar banco de dados com nome sismscaddb, e importar o arquivo sismscaddb.sql que está na pasta 'extra'
 -Mysql usuario root, sem senha, 
 -Usuário admin, senha 123456.
+-As fotos para upload devem possuir no máximo 2MB, e a proporção da foto deve ser ajustada manualmente antes da criação do registro de Membro, a proporção ideal para a foto é: 67px de largura e 82px de altura ( pode-se  utilizar do utilitário Paint ).
 
 As logos do cliente foram retiradas e substituidas por uma imagem qualquer.
