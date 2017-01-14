@@ -31,7 +31,7 @@ if ( isset($_POST['nome']) ) {
 		// Converte a extensao para mimusculo
 		$extensao = strtolower($extensao); 
 		// Somente imagens, .jpg;.jpeg;.gif;.png		
-		if(strstr('.jpg;.jpeg;.gif;.png', $extensao)) {
+		if(strstr('.jpg;.jpeg;.gif;.png', strtolower($extensao) )) {
 			// Cria um nome único para esta imagem
 			$novoNome = md5(microtime()) . $extensao;
 			 
@@ -43,11 +43,11 @@ if ( isset($_POST['nome']) ) {
 				$pessoa->setFoto($destino);
 				$_FILES['foto']['name'] = null;
 			} else
-				echo "";			
+				echo "<script type='text/javascript'>alert('Não foi possível gravar a foto enviada, verifique se a foto esta no padrão esperado!');</script>";					
 		} else
-			echo "";		
+			echo "<script type='text/javascript'>alert('Fotos com extensão desconhecida. Extensões permitidas: .jpg ou .jpeg ou .gif ou .png ');</script>";		
 	} else{
-		echo "";	
+		echo "<script type='text/javascript'>alert('Não foi possível localizar a foto informada ou a foto possui mais de 2MB, verifique e tente novamente');</script>";					
 	}
 
 	$gravou = $pessoa->grava();
